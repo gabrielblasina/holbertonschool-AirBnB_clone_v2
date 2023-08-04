@@ -14,7 +14,7 @@ class FileStorage:
             return FileStorage.__objects
         else:
             filtered_obj = {k: v for k, v in FileStorage.__objects.items()
-                            if isinstance(value, cls)}
+                            if isinstance(v, cls)}
             return filtered_obj
 
     def new(self, obj):
